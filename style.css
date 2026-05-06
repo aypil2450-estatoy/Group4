@@ -1,0 +1,15 @@
+#include <iostream>
+
+int main() {
+    // Styling Properties
+    const char* fontFamily = "Arial";
+    const char* bgColor = "#f5f7fa";
+    int navMargin = 10;
+
+    // Simulation
+    std::cout << "Styling: " << fontFamily << "\n";
+    std::cout << "Background: " << bgColor << "\n";
+    std::cout << "Nav Link Margin: " << navMargin << "px\n";
+
+    return 0;
+}
