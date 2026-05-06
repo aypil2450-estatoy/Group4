@@ -1,0 +1,55 @@
+#include <iostream>
+#include <vector>
+#include <string>
+
+// A simple structure to hold Developer information
+struct Developer {
+    std::string name;
+    std::string role;
+};
+
+int main() {
+    // Project Metadata
+    std::string title = "About - Our Project";
+    std::string description = "A collaborative website project using GitHub.";
+    std::string context = "This project is created for our Industrial Organization and Management subject.";
+
+    // Navigation Links (Simulated)
+    std::vector<std::string> nav = {"Home", "About", "Contact"};
+
+    // Developer List
+    std::vector<Developer> team = {
+        {"Albert Q. Ypil", "Project Leader"},
+        {"Jake A. Moneva", "Project Developer"},
+        {"Sean Allen Agas", "Documentator"},
+        {"Jay T. Lozano", "About Page Developer"},
+        {"Jamaica Laurito", "Navigation Checker"},
+        {"Meiran H. Mondonedo", "Contact Developer"},
+        {"Mary Jane D. Capin", "Designer"}
+    };
+
+    // Outputting the "UI" to the Console
+    std::cout << "--- " << title << " ---\n\n";
+
+    // Print Navigation
+    for (size_t i = 0; i < nav.size(); ++i) {
+        std::cout << nav[i] << (i < nav.size() - 1 ? " | " : "");
+    }
+    std::cout << "\n\n";
+
+    // Print Body Content
+    std::cout << "ABOUT US\n";
+    std::cout << "----------------------------------\n";
+    std::cout << description << "\n";
+    std::cout << "Workflow: Commits and Pull Requests.\n\n";
+    
+    std::cout << context << "\n\n";
+
+    // Print Developers
+    std::cout << "DEVELOPERS:\n";
+    for (const auto& member : team) {
+        std::cout << " - " << member.name << " (" << member.role << ")\n";
+    }
+
+    return 0;
+}
