@@ -1,4 +1,4 @@
-Group 4 Basic Website Project
+Group 4 Basic Website Project.
 
 Basic website for Industrial Organization and Management.
 
